@@ -11,7 +11,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "validate": "yarn lint && yarn build"
   },
   "dependencies": {
     "gatsby": "^2.24.47",
@@ -25,6 +26,8 @@
     "babel-jest": "^26.3.0",
     "babel-preset-gatsby": "^0.5.5",
     "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.0",

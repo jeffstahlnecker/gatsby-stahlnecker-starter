@@ -6,9 +6,10 @@
       "jsx": true
     }
   },
-  "extends": ["eslint:recommended", "react-app"],
+  "extends": ["eslint:recommended", "react-app", "airbnb", "eslint-config-prettier"],
   "rules": {
-    "strict": ["error", "never"]
+    "strict": ["error", "never"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "env": {
     "browser": true
