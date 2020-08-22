@@ -1,20 +1,20 @@
 module.exports = {
   transform: {
-    "^.+\\.jsx?$": "<rootDir>/tests/jest-preprocess.js",
+    "^.+\\.jsx?$": "<rootDir>/test/jest-preprocess.js",
   },
   moduleNameMapper: {
     ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
     ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-      "<rootDir>/tests/__mocks__/file-mock.js",
+      "<rootDir>/test/__mocks__/file-mock.js",
   },
-  testPathIgnorePatterns: ["node_modules", "\\.cache", "<rootDir>.*/public"],
+  testPathIgnorePatterns: ["node_modules", "coverage/*", "test/*", "\\.cache", "<rootDir>.*/public"],
   transformIgnorePatterns: ["node_modules/(?!(gatsby)/)"],
   globals: {
     __PATH_PREFIX__: "",
   },
   testURL: "http://localhost",
-  setupFiles: ["<rootDir>/tests/loadershim.js"],
-  setupFilesAfterEnv: ["<rootDir>/tests/setup-test-env.js"],
+  setupFiles: ["<rootDir>/test/loadershim.js"],
+  setupFilesAfterEnv: ["<rootDir>/test/setup-test-env.js"],
   snapshotSerializers: ["jest-emotion"],
   collectCoverageFrom: ["**/src/**/*.js"],
   coverageThreshold: {
@@ -25,4 +25,12 @@ module.exports = {
       lines: 0,
     },
   },
+  projects: [
+    './test/jest.lint.js',
+  ],
+  watchPlugins: [
+    'jest-watch-select-projects',
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
+  ]
 };
