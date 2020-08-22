@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-jest-eslint-essential-plugins",
   "private": true,
-  "description": "A simplifi\n  \"license\": \"0BSD\",ed bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "A simple starter including essential plugins, with eslint and jest configured",
+  "version": "0.0.1",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
