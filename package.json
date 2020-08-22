@@ -1,9 +1,8 @@
 {
   "name": "gatsby-starter-hello-world",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A simplifi\n  \"license\": \"0BSD\",ed bare-bones starter for Gatsby",
   "version": "0.1.0",
-  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -11,7 +10,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
     "gatsby": "^2.24.47",
@@ -19,7 +19,22 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^10.4.9",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
+    "babel-preset-gatsby": "^0.5.5",
+    "eslint": "^7.7.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.4.2",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1"
   },
   "repository": {
     "type": "git",
