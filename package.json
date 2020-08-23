@@ -37,6 +37,7 @@
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
     "babel-plugin-styled-components": "^1.11.1",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.24.47",
     "gatsby-image": "^2.4.16",
     "gatsby-plugin-react-helmet": "^3.3.10",
@@ -48,8 +49,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.1.1",
-    "dotenv": "^8.2.0"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -81,7 +81,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/jeffstahlnecker/gatsby-stahlnecker-starter.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
